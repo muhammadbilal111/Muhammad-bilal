@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Balsamiq+Sans:ital@1&family=Signika:wght@300;400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Document</title>
+  <title>Document</title>
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: linear-gradient(black,gray);
+      
+    }
+
+    li {
+      float: left;
+      /* border-right:1px solid #bbb; */
+    }
+
+    /* li:last-child {
+  border-left:1px solid #bbb ;
+} */
+
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 20px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: blue;
+    }
+
+    /* .menu:hover{
+    background-color:none;
+} */
+
+    /*.active {
+  background-color: #4CAF50;
+} */
+    .liCheck {
+      /* border-left:1px solid #8484846e; */
+      margin: 18px 5px;
+      width: 81%;
+      margin-right: 15px;
+      height: 24px;
+      font-weight: bold;
+      color: white;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      transition: .3s;
+      outline-style: none;
+
+    }
+
+    .liCheck:hover {
+     
+      font-size: 19px;
+      border-radius: 3px;
+    }26, 67),green
+
+    .liCheckk {
+      border-left: 1px solid #8484846e;
+    }
+
+    #search_keyword_top {
+      /* display: block;
+    width: 100%;
+    height: 36px;
+    padding: 10px 30px 10px 40px;
+    background: #5677CB;
+  
+     */
+      transition: color .3s;
+      font-weight: 1000;
+      
+      color: rgb(172, 25, 25) !important;
+      padding-left: 65px;
+      
+      background: #fff;
+      border: none;
+      position: absolute;
+      /* z-index: 1; */
+      top: 2px;
+      left: 50%;
+      width: 502px;
+      height: 36px;
+      margin: 15px 0 0 -310px;
+      shadow: 10px;
+      10px 10px 10px #000000;
+      /* overflow: hidden; */
+
+    }
+
+    ::placeholder {
+      margin-left: 3px;
+      color: rgb(0, 0, 0) !important;
+      opacity: 1;
+      /* Firefox */
+    }
+
+    .menu {
+      top: 23px;
+      width: 23px;
+      height: 27px;
+      position: absolute;
+      margin-left: 4px;
+      filter: invert(100%);
+      opacity: 1.9;
+
+
+    }
+
+    .mennu:hover {
+      background-color: #3456B5;
+    }
+
+    .mennuu {
+      border-right: 1px solid #8484846e;
+      margin-left: -27px;
+      padding: 9px 22px;
+    }
+
+    input[type="text"]:focus {
+      width: 200px;
+      outline: none;
+
+    }
+
+    .login_form {
+      border: 2px solid white;
+      width: 349px;
+      height: 305px;
+      float: right;
+      margin-left: 62%;
+      margin-right: 3px;
+      margin-top: 2px;
+      color: white;
+      border-radius: 7px;
+      padding: 22px 14px;
+      font-size: 19px;
+      background: linear-gradient(black,gray);
+      display: none;
+
+    }
+
+    .login-btn {
+      margin-left: 2px;
+      /* padding: 0px 0px; */
+      width: 313px;
+      margin-right: -29px;
+      background: linear-gradient(gray) !important;
+    }
+
+    .sign-up {
+      margin-left: -18px;
+      /* padding: 0px 0px; */
+      width: 87px;
+      margin-right: -29px;
+      color: white;
+      background: none;
+      border: none;
+      text-decoration: underline;
+      outline-style: none;
+    }
+
+    .sign-up:hover {
+      background: none;
+      color: #cec7c7;
+      text-decoration: underline;
+    }
+
+    #login-button-Close {
+      margin-left: 104px;
+      margin-top: 8px;
+      /* padding: 0px 0px; */
+      width: 116px;
+      margin-right: -52px;
+      background-color: #ff0000ba;
+    }
+
+    .signup-form {
+      border: 2px solid white;
+      width: 400px;
+      height: 490px;
+      float: none;
+      margin-left: 70%;
+      margin-right: 10px;
+      margin-top: 140px;
+      color: white;
+      border-radius: 7px;
+      padding: 12px 14px;
+      background: linear-gradient(black,gray);
+      position: absolute;
+      top: -80px;
+      display: none;
+    }
+
+    .signup-button {
+      margin-left: 12px;
+      /* padding: 0px 0px; */
+      width: 338px;
+      margin-right: -29px;
+      height: 39px;
+      background: linear-gradient(gray,black);
+    }
+
+    .close-sign-up {
+      margin-left: 93px;
+      margin-top: 8px;
+      /* padding: 0px 0px; */
+      width: 177px;
+      margin-right: -52px;
+      background-color: #ff0000ba;
+    }
+
+    .close-sign-up:hover {
+      background-color: #ff0000ba;
+    }
+   
+    .searchbutton{
+      position: absolute;
+width: 50px;
+height: 40px;
+
+
+margin-top: 0.9%;
+margin-left: 56%;
+background: linear-gradient(black,gray);
+   font-size: 30px;
+   
+    }
+
+    .search{
+      color: white;
+     
+    }
+    .eye{
+        position: absolute;
+        margin-left:18.5% ;
+        
+        top:27.5% ;
+        color: rgb(148, 30, 30);
+        cursor: pointer;
+    }
+    .eye:hover{
+        color: blue;
+        
+    }
+    .eye:hover::after{
+        size: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <ul>
+    <li class="mennuu"><a href="" class="mennu"><img class="menu" src="setup.png" alt=""></a></li>
+    <!-- <li><a class="active" href="#home">Home</a></li> -->
+    <li style="float:right"> <button class="liCheck" onclick=upload()>Sell </button> </li>
+    <li style="float:right" class="liCheckk"> <button class="liCheck" onclick=login()>Login </button> </li>
+
+    <!-- <li style="float:right" ><a href="#about">Uploads</a></li> -->
+    <li class="search"> 
+      <input type="text" placeholder="find bikes, cars, mobiles and more...." name="q" id="search_keyword_top" value=""
+        maxlength="250"><button id="searchbutton1" class="searchbutton" onclick="search" ><span class="search" ><i class="fa fa-search" id="font" ></i></span></button>
+        
+    </li>
+  </ul>
+
+
+  <div class="login_form" id="sign-in-form">
+    <form action="" method="POST" ">
+      <div class="form-group">
+        <label for="Email1">Email address</label>
+        <input type="email" class="form-control" name="emailadress" id="Email1" aria-describedby="emailHelp"
+          placeholder="Enter email" autocomplete="off" required>
+        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+      </div>
+      <div class="form-group">
+        <label for="Password1">Password</label>
+        <input type="password" class="form-control" name="password" id="Password1" placeholder="Password"
+          autocomplete="off" required>
+          <span class="eye" ><i class="fa fa-eye" id="font" onclick="toggle()"></i></span>
+      </div>
+      <button type="submit" name="login" id="login-button" class="btn btn-primary login-btn">Login</button><br>
+      <small id="emailHelp" class="form-text text-muted">Don't have an account?</small>
+      <button type="button" id="signup-button" class="btn btn-primary sign-up " onclick="signUp()">Sign Up</button><br>
+      <button type="button" id="login-button-Close" onclick="closeLogin()" class="btn btn-primary">Close</button>
+    </form>
+  </div>
+
+
+  <div class="signup-form" id="signUp-form">
+    <form action="" method="POSt" onsubmit=return"validation()">
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" name="user-name" id="name" aria-describedby="emailHelp"
+          placeholder="Enter Name" autocomplete="off">
+        <span id=username> </span>
+
+
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" name="user-email" id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="Enter email" autocomplete="off">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        <span id="emailid"></span>
+      </div>
+
+
+      <div class="form-group">
+        <label for="phoneNumber">Phone Number</label>
+        <input type="text" class="form-control" name="phone" id="phoneNumber" placeholder="Phone Number"
+          autocomplete="off">
+        <span id="phonenumber"></span>
+      </div>
+
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Create Password</label>
+        <input type="password" class="form-control" name="Cpassword" id="exampleInputEmail1" placeholder="Password"
+          autocomplete="off">
+        <span id=""></span>
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">Confirm Password</label>
+        <input type="password" class="form-control" name="Ppassword" id="Password1" placeholder="Confirm Password"
+          autocomplete="off">
+      </div>
+      <button type="submit" id="signup-button" name="submit-signup" class="btn btn-primary signup-button"
+        onclick="signup()">Sign Up</button>
+      <button type="button" id="button-Close" onclick="closeLogin()"
+        class="btn btn-primary close-sign-up">Close</button>
+    </form>
+  </div>
+
+  <div class="sell" id="upload-form">
+
+
+  </div>
+
+  <div>
+
+  </div>
+
+
+
+
+  <script>
+
+
+
+    document.getElementById("sign-in-form").style.display = "none";
+    document.getElementById("signUp-form").style.display = "none";
+
+
+    function login() {
+
+
+      document.getElementById("sign-in-form").style.display = "block";
+      document.getElementById("signUp-form").style.display = "none";
+    }
+    function closeLogin() {
+      document.getElementById("sign-in-form").style.display = "none";
+      document.getElementById("signUp-form").style.display = "none";
+
+    }
+    function signUp() {
+
+      document.getElementById("sign-in-form").style.display = "none";
+      document.getElementById("signUp-form").style.display = "block";
+
+
+    }
+    function validation() {
+
+      var user = document.getElementById('user').value;
+      if (user == " ") {
+        document.getElementById('username').innerHTML = "please fill the username filed";
+        return false;
+
+      }
+
+
+    }
+    function search() {
+	$(search_keyword_top).blur(function() {
+		if (this.value == "") { 
+			this.value = "Search";
+		}
+	});
+	
+	$(search_keyword_top).focus(function() {
+		if (this.value == "Search") {
+			this.value = "";
+		}
+	});
+}
+function toggle() {
+        var state =false;
+        if(state){
+            document.getElementById("Password1").setAttribute("type","password");
+            document.getElementById("eye").style.color='#7a797e';
+            state=false;
+        }
+        else{
+            document.getElementById("Password1").setAttribute("type","text");
+            document.getElementById("eye").style.color='#5887ef';
+            state=false;
+            
+        }
+    }
+
+
+  </script>
+</body>
+
+</html>
